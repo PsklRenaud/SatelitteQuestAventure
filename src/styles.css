@@ -1,0 +1,54 @@
+/* Bootstrap */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Page principale */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+
+/* fonts */
+
+.font-title {
+  font-family: 'Libre Franklin', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  margin-bottom: 0.5rem;
+}
+
+.font-subtitle {
+  font-family: 'Libre Franklin', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.64rem;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+}
+
+
+
+* {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.5rem;
+  font-weight: 300;
+}
+
+.hidden {
+  display: none;
+  width: Opx;
+  height: Opx;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.nav-a, .nav-a:visited, .nav-a:hover, .nav-a:focus, .nav-a:active  { 
+	text-decoration:none; 
+}

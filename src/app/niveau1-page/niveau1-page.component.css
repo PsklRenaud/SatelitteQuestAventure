@@ -1,0 +1,47 @@
+.titlecolor {
+    color:#FFD45C;
+}
+
+.bgcolor {
+    background-color: #FFD45C;
+    border-radius: 0px;
+}
+
+.bgcontainer {
+    background-color: #1d1d2d;
+}
+
+.niveau1-fond {
+    background-color: #1d1d2d;
+    width: 100%;
+    height: 100vh;  
+}
+
+.textcolor {
+    color: white;
+}
+
+.fontbuttonsize {
+    font-size: 0.6rem;
+    color: #1d1d2d;
+}
+
+.answerfontsize {
+    font-size: 2em;
+}
+
+
+.pageSize {
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.no-gutters {
+margin-right: 0;
+margin-left: 0;
+} 
+
+.encrelune {
+    text-decoration: none;
+}

@@ -1,0 +1,80 @@
+   /*Taille Zone*/
+.bigPicture{
+       height:80vh; 
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+}
+.minPicture{
+    height:20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    border:none;  
+}
+.minPicture:hover{
+    opacity:0.8;
+}
+.minPicture:active{
+    opacity:0.6;
+}
+.minPicture:focus{
+    outline: none;
+}
+.imgNasa{
+    height:20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;   
+}
+.pageSize {
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+   
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.zoneText{
+    height:80vh;
+    background-color:#c9b097;    
+}
+.zoneContinue{
+    height:20vh;
+    background-color:#c9b097;
+}
+.continueButtom{
+    padding-top:5vh;
+}
+/* image */
+.triangle{
+    height:10vh;
+    background-color:#c9b097;
+    background-image: url(../../assets/triangle.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+.continueArrow{
+    font-size: 1.7rem;
+}
+#button{
+    border: 0px;
+    cursor: pointer; 
+    border: none;
+    outline: none;
+    background-color: #000;
+    color:#c9b097;
+    padding-left:10%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right:10%;
+}
+#button:active{
+    opacity:0.7;
+}

@@ -1,0 +1,109 @@
+
+#burger {
+    z-index:2;
+    margin-left:4vh;
+    margin-top:4vh; 
+    position:fixed;  
+    top: 0;
+    left:0; 
+    overflow-x: hidden;
+    background-image: url(./img/Logo.png);
+}
+   /* ajouté suite au clic sur le logo */
+.logo{
+    background-color: rgb(26,26,26,0.9);  
+    }
+ #icone-connexion {
+    background-image: url(img/connexion.png)
+ }
+#icone-exploration {
+    background-image: url(img/Sattelite.png)
+}
+#icone-dashboard {
+    background-image: url(img/Tableau.png)
+}
+#icone-satellte {
+    background-image: url(img/Sattelite2.png)
+}
+    
+.Onit{
+    z-index:4;
+    height:100vh;
+    width: 40vh;
+    background-color: rgb(26,26,26,0.9);
+    padding-top: 15vh; 
+    padding-left:2vh; 
+}
+/* Pour icone menu */
+.icone2{
+    height: 9vh;
+    width: 9vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: rgb(26,26,26,0);
+    border: 0px;
+    cursor: pointer; 
+    border: none;
+    outline: none;   
+}
+/* Pour tout les icones */
+.icone{
+    height: 8vh;
+    width: 4vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: rgb(26,26,26,0);
+    border: 0px;
+    cursor: pointer; 
+    border: none;
+    outline: none;;   
+}
+
+.icone3{
+    height: 8vh;
+    width: 6vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: rgb(26,26,26,0);
+    border: 0px;
+    cursor: pointer; 
+    border: none;
+    outline: none;;   
+}
+/* Coloration des titres des liens */
+.lienNavBar {
+    color: #FFD45C;
+    padding-left: 7vh;
+    width: 25vh;
+    display: inline-block;
+    text-align: left;  
+}
+
+
+    /*Responsive pleine page version portable  */
+@media screen and (max-width:720px){
+    .Onit {
+        width: 100vh;
+        top: 0;
+        left:0;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        height: 100vh;
+        background-color: rgb(26,26,26); 
+    }
+    .icone{
+        height: 10.5vh;
+        width: 10vh;     
+        }
+    .lienNavBar {
+        color: #FFD45C;
+        padding-left: 16vh;
+        width: 100vh;
+        display: inline-block;        
+    }
+    strong {
+        font-size: 2vh;
+    }
+}

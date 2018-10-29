@@ -1,0 +1,208 @@
+#tableau-de-bord-Background {
+    height: 100%;
+    width: 270em;
+    background: #1D1D2D;
+    background-image: url(./tableauDeBord-img/Background.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#tableau-de-bord-container {
+    height: 100%;
+    width: 270em;
+    position: absolute;
+    overflow-y: hidden;
+}
+
+/* ----- Circles ----- */
+
+.tableau-de-bord-Background-circles {
+    position: absolute;
+    border-radius: 50%;
+    border: solid 1px #fff;
+}
+
+#tableau-de-bord-Background-circles-moon {
+    width: 56em;
+    height: 56em;
+    margin-left: -16em;
+    margin-top: -0.5%;
+}
+
+#tableau-de-bord-Background-circles-earth {
+    width:250em;
+    height: 250em;
+    margin-left: -234em;
+    margin-top: -70em;
+}
+
+#tableau-de-bord-Background-circles-mars {
+    width:280em;
+    height: 280em;
+    margin-left: -200em;
+    margin-top: -85em;
+}
+
+/* ----- Path ----- */
+
+
+/* ----- Planets ----- */
+
+#tableau-de-bord-planets-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.tableau-de-bord-planets {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tableau-de-bord-planets:hover  {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+.tableau-de-bord-titles {
+    margin-top:2em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.tableau-de-bord-titles:hover {
+    cursor: pointer;
+}
+
+.tableau-de-bord-titles {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+
+/* --- Points --- */
+
+.tableau-de-bord-point{
+    width: 2em;
+    height: 2em;
+    opacity: 0.6;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableau-de-bord-point:hover {
+    cursor: pointer;
+    background: none;
+    opacity: 0.8;
+    border: solid #FFD45C 0.2em;
+    width: 1.6em;
+    height: 1.6em;
+    transition: 0.2s;
+}
+
+.tableau-de-bord-point:hover >.tableau-de-bord-innerpoint {
+    background: #FFD45C;
+    width: 1em;
+    height: 1em;
+}
+
+.tableau-de-bord-point-title {
+    position: absolute;
+    color: #fff;
+    margin-left: 4em;
+    visibility: hidden;
+}
+
+.tableau-de-bord-point:hover > .tableau-de-bord-point-title {
+    visibility: visible;
+}
+
+
+/* Earth */
+#tableau-de-bord-earth-container {
+    margin-left:9em;
+    margin-top:18%;
+}
+
+#tableau-de-bord-earth-img {
+    width: 8em;
+    height: 8em;
+    background-image: url(./tableauDeBord-img/Earth.png);
+    
+}
+
+#tableau-de-bord-earth-point-container {
+    margin-left:6.5em;
+    margin-bottom:-2em;
+
+}
+
+/* Moon */
+#tableau-de-bord-moon-container {
+    margin-left:17.5em;
+    margin-top:6.2%;
+}
+
+#tableau-de-bord-moon-img {
+    width: 5em;
+    height: 5em;
+    background-image: url(./tableauDeBord-img/Moon.png);
+}
+
+#tableau-de-bord-moon-point-container {
+    margin-left:1.5em;
+    margin-bottom:3em;
+}
+
+/* Bug */
+#tableau-de-bord-bug-point-container {
+    margin-left:8em;
+    margin-top:11%;
+}
+
+
+/* Mars */
+#tableau-de-bord-mars-container {
+    margin-left:24em;
+    margin-top:20%;
+}
+
+#tableau-de-bord-mars-img {
+    width: 7em;
+    height: 7em;
+    background-image: url(./tableauDeBord-img/Mars.png);
+}
+
+#tableau-de-bord-mars-point-container {
+    margin-left:2em;
+    margin-top:3em;
+}
+
+/* Asteroide */
+#tableau-de-bord-asteroide-container {
+    margin-left:38em;
+    margin-top:12%;
+}
+
+#tableau-de-bord-asteroide-img {
+    width: 5em;
+    height: 5em;
+    background-image: url(./tableauDeBord-img/asteroide.png);
+}
+
+#tableau-de-bord-asteroide-point-container {
+    margin-bottom:6em;
+}
+
+#tableau-de-bord-asteroide-title {
+    margin-left: -1.5em;
+}

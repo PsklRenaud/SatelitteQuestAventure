@@ -1,0 +1,30 @@
+
+    <div id="logo" class="">
+            <button type="button" (click)="showMenu()"  id="burger" class="icone2 nav-a"></button>
+        </div>
+       
+    
+         <div id="bigMenu" class="font-subtitle bigMenu hidden" >
+            <div class="col-12 icone">
+            </div>
+            <div>
+                <button type="button" (click)="hideMenu()" id="menuLink" class="icone" id="icone-connexion">
+                    <a routerLink="welcome-page" class="lienNavBar nav-a" href=""><form><strong>CONNECTION</strong></form></a>
+                </button>
+            </div>
+            <div>
+                <button type="button" (click)="hideMenu()" id="menuLink" id="icone-exploration" class="icone3">
+                    <a routerLink="niveau1" class="lienNavBar nav-a" href=""><form><strong>EXPLORATION</strong></form></a>
+                </button>
+            </div> 
+            <div>
+                <button type="button" (click)="hideMenu()" id="menuLink"  class="icone3" id="icone-dashboard">
+                    <a routerLink="tableau-de-bord" class="lienNavBar nav-a" href=""><form><strong>DASHBOARD</strong></form></a>
+                </button>
+            </div>
+            <div>
+                <button type="button" (click)="hideMenu()" id="menuLink"  id="icone-satellte" class="icone">
+                    <a routerLink="pimp-my-satellite" class="lienNavBar nav-a" href=""><form><strong>MY SATELLITE</strong></form></a>
+                </button>
+            </div>
+        </div> 

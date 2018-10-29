@@ -1,0 +1,135 @@
+
+.welcomePage-Forms-container {
+    width:100%;
+}
+
+/* Buttons */
+.welcomePage-Forms-choice-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.WelcomePage-Forms-choice {
+    height: 2.2em;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.WelcomePage-Forms-choice  > p {
+    margin-top:10%;
+    color: #fff;
+}
+
+.WelcomePage-Forms-choice-select {
+    border-top: solid;
+    border-right: solid;
+    border-left: solid;
+    border-color: #fff;
+    border-width: 1px;
+}
+
+.WelcomePage-Forms-choice-unselect {
+    border-bottom: solid;
+    border-color: #fff;
+    border-width: 1px;
+}
+
+.WelcomePage-Forms-choice-unselect > p{
+    opacity: 0.7;
+}
+
+.WelcomePage-Forms-choice-unselect:hover {
+    cursor: pointer;
+}
+
+.WelcomePage-Forms-choice-unselect:hover > p {
+    cursor: pointer;
+    opacity: 1;
+}
+
+@media screen and (min-width:959px){
+    .WelcomePage-Forms-choice > p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width:959px){
+    .WelcomePage-Forms-choice > p {
+        font-size: 0.6em;
+    }
+}
+
+
+.WelcomePage-Forms-choice:hover {
+    color: #fff;
+}
+
+
+
+/* Forms */
+
+.welcomePage-Forms {
+    width: 100%;
+    height: 27em;
+    padding-top:1.5em;
+}
+
+.welcomePage-Form {
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.welcomePage-Form > label {
+    color: #FFD45C;
+}
+
+.welcomePage-Form > input {
+    width: 100%;
+    height: 2.6em;
+    margin-top: 0.5em;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: block;
+    border:none;
+    color: #4D4D4D;
+}
+
+.welcomePage-Form > input:focus {
+    outline: none;
+}
+
+.welcomePage-Form > input:invalid:not(:focus) {
+    outline: 1px solid #f00;
+}
+
+.welcomePage-Form > ::placeholder {
+    color: #B3B3B3;
+}
+.welcomePage-Form-false {
+    outline: 1px solid #f00;
+}
+
+.welcomePage-Forms-button {
+    width: 100%;
+    height: 2.6em;
+    margin-top: 0.7em;
+    background-color: #FFD45C;
+    color: #fff;
+    border: none;
+}
+
+.welcomePage-Forms-button:focus {
+    outline: none;
+}
+.welcomePage-Forms-button:hover{
+    cursor: pointer;
+}
+
+.welcomePage-Forms-button:active{
+    border: none;
+    opacity: 0.7;
+}

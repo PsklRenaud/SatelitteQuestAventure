@@ -1,0 +1,345 @@
+#pimp-background p {
+    color:#fff;
+}
+#pimp-satellite-container{
+    display: flex;
+    flex-direction: row;
+}
+#pimp-background {
+    background: #000;
+    width: 100%;
+    height: 100vh;     
+    display: flex;
+    overflow-y: hidden; 
+}
+
+/* ----------- WindoW Satellite -----------*/
+#pimp-satellite-window {
+    height: 100vh;
+    width: 70%;
+}
+#pimp-satellite-coordonate{
+    padding:5%;
+}
+@media screen and (max-width:720px){
+    #pimp-satellite-coordonate{
+        transform: scale(0.7);
+        margin-left: -17%;  
+    }
+}
+#pimp-satellite-coordonate > p{
+    margin: 0.3vh;
+}
+#pimp-satellite-name {
+    color:#FFD45C;
+}
+#pimp-satellite-window-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width:720px){
+    #pimp-satellite-window-container{
+        height: 70%;
+    }
+}
+@media screen and (max-width:720px){
+    #pimp-satellite-window-container{
+        height: 60%;
+    }
+}
+#pimp-satellite-container{
+    width: 60%;
+    height: 50%;
+}
+/* body */
+#pimp-satellite-body{
+    width: 40%;
+    height:16vw;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center;
+    margin-top:  4vw;
+    margin-left: -16%;
+    margin-right: -36%;
+}
+.pimp-satellite-body-square{background-image: url(./img/satellite/Body1_square.png)}
+.pimp-satellite-body-round{background-image: url(./img/satellite/Body2_round.png)}
+.pimp-satellite-body-octo{background-image: url(./img/satellite/Body3_octo.png)}
+
+/* Solar Panels left*/
+#pimp-satellite-solar-left{
+    width:50%;
+    height: 25vw;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    background-position: center;
+}
+.pimp-satellite-solar-left-long{background-image: url(./img/satellite/Solar1_long_left.png)}
+.pimp-satellite-solar-left-wave{background-image: url(./img/satellite/Solar2_wave_left.png)}
+.pimp-satellite-solar-left-circle{background-image: url(./img/satellite/Solar3_circle_left.png)}
+
+/* Antenna */
+#pimp-satellite-antenna{
+    width:30%;
+    height: 15vw;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+    margin-top:7.2vw;
+    margin-right: -10%;
+}
+.pimp-satellite-antenna-light{background-image: url(./img/satellite/Antenna1_light.png)}
+.pimp-satellite-antenna-heavy{background-image: url(./img/satellite/Antenna2_heavy.png)}
+.pimp-satellite-antenna-multiple{background-image: url(./img/satellite/Antenna3_multiple.png)}
+
+
+/* Solar Panels right*/
+#pimp-satellite-solar-right{
+    width:70%;
+    height: 25vw;
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: center;
+    margin-top:  2vw;
+}
+.pimp-satellite-solar-right-long{background-image: url(./img/satellite/Solar1_long_right.png)}
+.pimp-satellite-solar-right-wave{background-image: url(./img/satellite/Solar2_wave_right.png)}
+.pimp-satellite-solar-right-circle{background-image: url(./img/satellite/Solar3_circle_right.png)}
+
+/* ----------- WindoW Customise -----------*/
+#pimp-customise-window {
+    background: #1D1D2D;
+}
+.pimp-satellite-img:hover {
+    cursor: pointer;
+}
+@media screen and (min-width:720px){
+    #pimp-background{
+        flex-direction: row;
+    }
+    #pimp-customise-window {
+        background: #1D1D2D;
+        width: 30%;
+        height: 100vh;
+    }
+    #pimp-forms-button {
+        height: 8vh;
+    }
+}
+@media screen and (max-width:720px){
+    #pimp-background {
+        flex-direction: column;
+    }
+    #pimp-satellite-window {
+        width: 100%;
+        height: 40vh;
+    }
+    #pimp-customise-window {
+        background: #1D1D2D;
+        width: 100%;
+        height: 60vh;
+    }
+    #pimp-forms-button {
+        height: 5vh;
+    }
+    #pimp-forms-satellite {
+        overflow: auto;
+    }
+}
+
+/* Switch button Satellite/Custom */
+#pimp-forms-button {
+    width: 100%;
+    margin-bottom: 4vh;
+    display: flex;
+    flex-direction: row;
+}
+.pimp-forms-button{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    border: none;
+    background: none;
+}
+.pimp-forms-button:hover{
+    cursor: pointer;
+}
+.pimp-forms-button:focus{
+    outline: none;
+}
+.pimp-forms-button-unselect {
+    background: #000;
+    opacity: 0.7;
+}
+.pimp-forms-button-unselect:hover {
+    opacity: 1;
+}
+
+/* ------ forms Satellite -------- */
+#pimp-forms-satellite {
+    width:100%;
+    height: 100%;
+}
+.pimp-forms-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pimp-forms-satellite-categories {
+    margin-bottom: 3vh;
+    width:90%;
+}
+.pimp-forms-satellite-categories > h3 {
+    color:#FFD45C;
+    margin-bottom:2vh;
+    padding-bottom: 1vh; 
+    border-bottom: solid #fff 1px;
+}
+.pimp-forms-satellite-categories > h3:hover {
+    cursor: pointer;
+}
+.pimp-forms-satellite-categories p {
+    margin-bottom: 0.5em;
+}
+/* window Satellite center / antenna */
+#pimp-satellite-center-container, #pimp-satellite-antenna-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pimp-satellite-center, .pimp-satellite-antenna{
+    width:30%;
+}
+.pimp-satellite-center-img, .pimp-satellite-antenna-img {
+    width: 100%;
+}
+@media screen and (min-width:720px){
+    .pimp-satellite-center-img, .pimp-satellite-antenna-img {
+        height: 8.3vw;
+    }
+}
+@media screen and (max-width:720px){
+    .pimp-satellite-center-img, .pimp-satellite-antenna-img {
+        height: 27vw;
+    }
+}
+.pimp-satellite-center-square-img-unselect{background-image:url(./img/Body_square.png)}
+.pimp-satellite-center-square-img-unselect:hover{background-image:url(./img/Body_square_hover.png)}
+.pimp-satellite-center-square-img-select{background-image:url(./img/Body_square_select.png)}
+
+.pimp-satellite-center-round-img-unselect{background-image:url(./img/Body_round.png)}
+.pimp-satellite-center-round-img-unselect:hover{background-image:url(./img/Body_round_hover.png)}
+.pimp-satellite-center-round-img-select{background-image:url(./img/Body_round_select.png)}
+
+.pimp-satellite-center-octo-img-unselect{background-image:url(./img/Body_octo.png)}
+.pimp-satellite-center-octo-img-unselect:hover{background-image:url(./img/Body_octo_hover.png)}
+.pimp-satellite-center-octo-img-select{background-image:url(./img/Body_octo_select.png)}
+
+
+.pimp-satellite-antenna-light-img-unselect{background-image:url(./img/Antenna_light.png)}
+.pimp-satellite-antenna-light-img-unselect:hover{background-image:url(./img/Antenna_light_hover.png)}
+.pimp-satellite-antenna-light-img-select{background-image:url(./img/Antenna_light_select.png)}
+
+.pimp-satellite-antenna-heavy-img-unselect{background-image:url(./img/Antenna_heavy.png)}
+.pimp-satellite-antenna-heavy-img-unselect:hover{background-image:url(./img/Antenna_heavy_hover.png)}
+.pimp-satellite-antenna-heavy-img-select{background-image:url(./img/Antenna_heavy_select.png)}
+
+.pimp-satellite-antenna-multiple-img-unselect{background-image:url(./img/Antenna_multiple.png)}
+.pimp-satellite-antenna-multiple-img-unselect:hover{background-image:url(./img/Antenna_multiple_hover.png)}
+.pimp-satellite-antenna-multiple-img-select{background-image:url(./img/Antenna_multiple_select.png)}
+
+/* window Satellite solar */
+#pimp-satellite-solar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pimp-satellite-solar-img {
+    width: 100%;
+    margin-bottom: 1vh;
+}
+@media screen and (min-width:720px){
+    .pimp-satellite-solar-img {
+        height: 9vw;
+    }
+}
+@media screen and (max-width:720px){
+    .pimp-satellite-solar-img {
+        height: 30vw;
+    }
+    
+}
+
+.pimp-satellite-solar-long-img-unselect{background-image:url(./img/Solar_Long.png)}
+.pimp-satellite-solar-long-img-unselect:hover{background-image:url(./img/Solar_Long_hover.png)}
+.pimp-satellite-solar-long-img-select{background-image:url(./img/Solar_Long_select.png)}
+
+.pimp-satellite-solar-wave-img-unselect{background-image:url(./img/Solar_wave.png)}
+.pimp-satellite-solar-wave-img-unselect:hover{background-image:url(./img/Solar_wave_hover.png)}
+.pimp-satellite-solar-wave-img-select{background-image:url(./img/Solar_wave_select.png)}
+
+.pimp-satellite-solar-circle-img-unselect{background-image:url(./img/Solar_circle.png)}
+.pimp-satellite-solar-circle-img-unselect:hover{background-image:url(./img/Solar_circle_hover.png)}
+.pimp-satellite-solar-circle-img-select{background-image:url(./img/Solar_circle_select.png)}
+
+.pimp-satellite-img {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.1s;
+}
+/* ------ forms Custom -------- */
+#pimp-forms-custom-container{
+    width: 95%;
+    margin-left:6.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.pimp-forms-custom-sticker {
+    width: 25%;
+    margin-right:6%;
+    margin-bottom: 4vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.2;
+}
+.pimp-forms-custom-sticker:hover{
+    cursor: pointer;
+}
+@media screen and (min-width:720px){
+    .pimp-forms-custom-sticker { height: 7.2vw; }
+}
+@media screen and (max-width:720px){
+    .pimp-forms-custom-sticker { height: 24vw; }
+}
+.pimp-stickers-flamme{background-image:url(./img/stickers/stickers_flamme.png);}
+.pimp-stickers-flamme:hover{background-image:url(./img/stickers/stickers_flamme_select.png);}
+.pimp-stickers-flamme-select{background-image:url(./img/stickers/stickers_flamme_select.png);}
+
+.pimp-stickers-nasa{background-image:url(./img/stickers/stickers_nasa.png);}
+.pimp-stickers-nasa:hover{background-image:url(./img/stickers/stickers_nasa_select.png);}
+.pimp-stickers-nasa-select{background-image:url(./img/stickers/stickers_nasa_select.png);}
+
+.pimp-stickers-ol{background-image:url(./img/stickers/stickers_ol.png);}
+.pimp-stickers-ol:hover{background-image:url(./img/stickers/stickers_ol_select.png);}
+.pimp-stickers-ol-select{background-image:url(./img/stickers/stickers_ol_select.png);}
+
+.pimp-stickers-unkut{background-image:url(./img/stickers/stickers_unkut.png);}
+.pimp-stickers-unkut:hover{background-image:url(./img/stickers/stickers_unkut_select.png);}
+.pimp-stickers-unkut-select{background-image:url(./img/stickers/stickers_unkut_select.png);}
+
+.pimp-stickers-cr7{background-image:url(./img/stickers/stickers_cr7.png);}
+.pimp-stickers-cr7:hover{background-image:url(./img/stickers/stickers_cr7_select.png);}
+.pimp-stickers-cr7-select{background-image:url(./img/stickers/stickers_cr7_select.png);}
+
+.pimp-stickers-wild{background-image:url(./img/stickers/stickers_wild.png);}
+.pimp-stickers-wild:hover{background-image:url(./img/stickers/stickers_wild_select.png);}
+.pimp-stickers-wild-select{background-image:url(./img/stickers/stickers_wild_select.png);}
+
+.pimp-stickers-perche{background-image:url(./img/stickers/stickers_perche.png);}
+.pimp-stickers-perche:hover{background-image:url(./img/stickers/stickers_perche_select.png);}
+.pimp-stickers-perche-select{background-image:url(./img/stickers/stickers_perche_select.png);}

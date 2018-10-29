@@ -1,0 +1,61 @@
+<div class="container-fluid pageSize no-gutters">
+  <div class="row">
+    <div id="bigImg" class="col-12 col-sm-12 col-md-6  order-md-1 order-md-2 order-sm-1 order-1 bigPicture" [ngStyle]="{'background-image': 'url('+img[14]+')'}">
+    </div>
+    <div id="thumb2b" class="col-12 col-sm-12 col-md-6  order-md-1 order-md-2 order-sm-1 order-1 bigPicture hidden"
+      [ngStyle]="{'background-image': 'url('+img[10]+')'}">
+    </div>
+    <div id="thumb3b" class="col-12 col-sm-12 col-md-6  order-md-1 order-md-2 order-sm-1 order-1 bigPicture hidden"
+      [ngStyle]="{'background-image': 'url('+img[11]+')'}">
+    </div>
+    <div id="thumb4b" class="col-12 col-sm-12 col-md-6  order-md-1 order-md-2 order-sm-1 order-1 bigPicture hidden"
+      [ngStyle]="{'background-image': 'url('+img[12]+')'}">
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 order-md-2 zoneText">
+      <div class="row">
+        <div class="offset-7 col-2 triangle"></div>
+      </div>
+      <div class="row">
+        <div class="offset-1 col-10 font-title">
+          <H5>THE {{travelInfo.name}}</H5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="font-subtitle offset-1 col-10">
+          <p>The Moon is an astronomical body that orbits planet Earth and is Earth's only permanent natural satellite. It is the fifth-largest natural satellite in the Solar System, and the largest among planetary satellites relative to the size of the planet that it orbits (its primary). The Moon is after Jupiter's satellite Io the second-densest satellite in the Solar System among those whose densities are known.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="font-subtitle offset-1 col-10">
+          <p>Perigee : 362600 km</p>
+          <p>Apogee : 405400 km</p>
+          <p>Orbital period : 27.321661 d</p>
+          <p>Inclination : 5.145° to the ecliptic</p>
+          <p>Satellite of: Earth</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="  col-12 col-sm-12 col-md-6">
+      <div class="row">
+        <button type="button" class="col-6 col-sm-3 col-md-3 minPicture" id="thumb1" [ngStyle]="{'background-image': 'url('+img[14]+')'}">
+        </button>
+        <button type="button" class="col-6 col-sm-3 col-md-3 minPicture" id="thumb2" [ngStyle]="{'background-image': 'url('+img[10]+')'}">
+        </button>
+        <button type="button" class="col-6 col-sm-3 col-md-3 minPicture" id="thumb3" [ngStyle]="{'background-image': 'url('+img[11]+')'}">
+        </button>
+        <button type="button" class="col-6 col-sm-3 col-md-3 minPicture" id="thumb4" [ngStyle]="{'background-image': 'url('+img[12]+')'}">
+        </button>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 zoneContinue" >
+      <div class="row">
+        <div class="col-sm-12 offset-md-5 col-md-5 offset-lg-7 col-lg-5 font-title continueButtom">
+          <button id="button" routerLink="/niveau2" class="lienNavBar nav-a" style="white-space: nowrap;">CONTINUE
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,333 @@
+#tableau-de-bord-Background {
+    height: 100vh;
+    width: 330em;
+    background: #1D1D2D;
+    background-image: url(./tableauDeBord-img/Background.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    
+}
+
+#tableau-de-bord-container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* --- All --- */
+
+.tableau-de-bord-position {
+    height: 100%;
+}
+
+.tableau-de-bord-planet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -- Image -- */
+.tableau-de-bord-img{
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tableau-de-bord-img:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    z-index: 1;
+}
+
+/* -- Planet Name -- */
+.tableau-de-bord-titles {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 1.5em;
+    padding: 0.2em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+/* -- Points -- */
+.tableau-de-bord-point-container {
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+.tableau-de-bord-point-container:focus {
+    outline:none;
+}
+.tableau-de-bord-point{
+    width: 2em;
+    height: 2em;
+    opacity: 0.6;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tableau-de-bord-point:hover {
+    cursor: pointer;
+    background: none;
+    opacity: 0.8;
+    border: solid #FFD45C 0.2em;
+    transition: 0.2s;
+}
+.tableau-de-bord-point:hover >.tableau-de-bord-innerpoint {
+    background: #FFD45C;
+    width: 1em;
+    height: 1em;
+}
+.tableau-de-bord-point-title {
+    color: #fff;
+    position: relative;
+    display:flex;
+    align-items: center;
+}
+.tableau-de-bord-point-title > p {
+    position: absolute;
+    margin : 0;
+    margin-left: 1em;
+    width: 5em;
+}
+.tableau-de-bord-point-container:not(:hover) > .tableau-de-bord-point-title {
+    display: none;
+}
+
+.tableau-de-bord-point-container:active{
+    opacity: 0.7;
+}
+
+/* -- Fenetre Info -- */
+.tableau-de-bord-img:not(:hover) > .tableau-de-bord-info-container {
+    display: none;
+}
+.tableau-de-bord-info-container{
+    position: relative;
+    margin-left: 100%;
+    margin-top:30%;
+}
+.tableau-de-bord-info{
+    position: absolute;
+    width: 40em;
+    padding:1.5em 0em 1em 5em;
+    border-top: #fff solid 1px;
+    z-index: 3;
+}
+.tableau-de-bord-info-img-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}    
+.tableau-de-bord-info-img {
+    width:40%;
+    height: 13em;
+    background: #000;
+}
+.tableau-de-bord-info-text {
+    width:55%;
+    color: #fff;
+    background-color: rgba(29, 29, 45, 0.8);
+}
+.tableau-de-bord-info-button {
+    width: 100%;
+    height: 2em;
+    margin-top: 1em;
+    background: #FFD45C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableau-de-bord-info-button:active{
+    opacity: 0.7;
+}
+
+/* --- Earth --- */
+#tableau-de-bord-earth-position {
+    margin-left:5em;
+}
+#tableau-de-bord-earth-container {
+    margin-top: 40vh;
+}
+#tableau-de-bord-earth-point-container {
+    margin-left:7.5em;
+    margin-bottom:-2em;
+}
+#tableau-de-bord-earth-img {
+    width: 9em;
+    height: 9em;
+    background-image: url(./tableauDeBord-img/Earth.png);
+}
+#tableau-de-bord-earth-info-container {
+    margin-left: 8em;
+}
+
+/* --- Moon --- */
+#tableau-de-bord-moon-position {
+    margin-left:20em;
+}
+#tableau-de-bord-moon-container {
+    margin-top: 10vh;
+}
+#tableau-de-bord-moon-point-container {
+    margin-bottom:2em;
+}
+#tableau-de-bord-moon-img {
+    width: 5em;
+    height: 5em;
+    background-image: url(./tableauDeBord-img/Moon.png);
+}
+#tableau-de-bord-moon-info-container {
+    margin-left: 4em;
+}
+
+/* --- Bug --- */
+#tableau-de-bord-bug-position {
+    margin-left:9em;
+}
+#tableau-de-bord-bug-container {
+    margin-top: 19vh;
+}
+
+
+/* --- Mars --- */
+#tableau-de-bord-mars-position {
+    margin-left:32em;
+}
+#tableau-de-bord-mars-container {
+    margin-top: 35vh;
+}
+#tableau-de-bord-mars-point-container {
+    margin-top:4em;
+}
+#tableau-de-bord-mars-img {
+    width: 8em;
+    height: 8em;
+    background-image: url(./tableauDeBord-img/Mars.png);
+}
+#tableau-de-bord-mars-info-container {
+    margin-left: 5em;
+    margin-top:10%;
+}
+#tableau-de-bord-mars-info {
+    padding-left: 8em;
+}
+
+/* --- Asteroide --- */
+#tableau-de-bord-asteroide-position {
+    margin-left:37em;
+}
+#tableau-de-bord-asteroide-container {
+    margin-top: 20vh;
+}
+#tableau-de-bord-asteroide-point-container {
+    margin-left:1em;
+    margin-bottom: 3em;
+}
+#tableau-de-bord-asteroide-img {
+    width: 4em;
+    height: 4em;
+    background-image: url(./tableauDeBord-img/asteroide.png);
+}
+#tableau-de-bord-asteroide-info-container {
+    margin-left: 3em;
+}
+
+/* --- Jupiter --- */
+#tableau-de-bord-jupiter-position {
+    margin-left:35em;
+}
+#tableau-de-bord-jupiter-container {
+    margin-top: 5vh;
+}
+#tableau-de-bord-jupiter-point-container {
+    margin-left:-8em;
+    margin-top: 4em;
+}
+#tableau-de-bord-jupiter-img {
+    width: 17em;
+    height: 17em;
+    background-image: url(./tableauDeBord-img/Jupiter.png);
+}
+#tableau-de-bord-jupiter-info-container {
+    margin-left: 13em;
+}
+#tableau-de-bord-jupiter-info{
+    padding-left: 10em;
+}
+
+/* --- Saturne --- */
+#tableau-de-bord-saturne-position {
+    margin-left:50em;
+}
+#tableau-de-bord-saturne-container {
+    margin-top: 23vh;
+}
+#tableau-de-bord-saturne-point-container {
+    margin-left:1em;
+    margin-top: 3em;
+}
+#tableau-de-bord-saturne-img {
+    width: 24em;
+    height: 14em;
+    background-image: url(./tableauDeBord-img/Saturne.png);
+}
+#tableau-de-bord-saturne-info-container {
+    margin-left: 14em;
+    margin-top: 15%;
+}
+#tableau-de-bord-saturne-info {
+    padding-left: 13em;
+    width: 46em;
+}
+
+/* --- Titan --- */
+#tableau-de-bord-titan-position {
+    margin-left:10em;
+}
+#tableau-de-bord-titan-container {
+    margin-top: 26vh;
+}
+#tableau-de-bord-titan-point-container {
+    margin-bottom: 3em;
+}
+#tableau-de-bord-titan-img {
+    width: 5em;
+    height: 5em;
+    background-image: url(./tableauDeBord-img/Titan.png);
+}
+#tableau-de-bord-titan-info-container {
+    margin-left: 3em;
+    margin-top: 5%;
+}
+
+
+/* ------ Bouton gauche droite ------ */
+
+#tableau-de-bord-nav-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+    width:20em;
+    height: 12vh;
+    position: fixed;
+    right: 10%;
+    bottom: 2em;
+}
+.tableau-de-bord-nav-button {
+    width: 45%;
+    height: 100%;
+    background:#000;
+}
+
+
+

@@ -1,0 +1,36 @@
+<div class="welcomePage-Forms-container">
+<!-- Buttons -->
+  <div class="welcomePage-Forms-choice-container">
+    <div class="WelcomePage-Forms-choice font-subtitle WelcomePage-Forms-choice-select"><p>My first time</p></div>
+    <div class="WelcomePage-Forms-choice font-subtitle WelcomePage-Forms-choice-unselect"><p>Connection</p></div>
+  </div>
+<!-- My First Time / Form -->
+  <div class="welcomePage-Forms-subscribe welcomePage-Forms">
+    <div class="welcomePage-Form">
+        <label class="font-subtitle" for="name">Satellite Name</label>
+        <input id="Satellite-name" type="text" id="name" placeholder="Pseudo (min 4 max 12 characters)" minlength="4" maxlength="12" autocomplete="off" spellcheck="false"/>
+    </div>
+    <div class="welcomePage-Form">
+        <label class="font-subtitle" for="Coordonate">Earth coordonate</label>
+        <input id="Earth-coordonate" type="email" id="Coordonate" placeholder="Email" autocomplete="off"/>
+    </div>
+    <div class="welcomePage-Form">
+        <label class="font-subtitle" for="password">Launching code</label>
+        <input id="Launching-code" type="password" id="Password" placeholder="Password" autocomplete="off"/>
+    </div>
+    <button id="welcomePage-Forms-button-launching" class="welcomePage-Forms-button font-subtitle" [routerLink]="['/niveau1']">Launching</button>
+  </div>
+  <!-- Connection / Form -->
+  <div class="welcomePage-Forms-Connection welcomePage-Forms hidden">
+      <div class="welcomePage-Form">
+          <label class="font-subtitle" for="name">Satellite Name or coordonate</label>
+          <input type="text" id="name" placeholder="Pseudo or email" autocomplete="off" spellcheck="false"/>
+      </div>
+      <div class="welcomePage-Form">
+          <label class="font-subtitle" for="password">Launching code</label>
+          <input type="password" id="Password" placeholder="Password" autocomplete="off"/>
+      </div>
+      <button class="welcomePage-Forms-button font-subtitle" [routerLink]="['/niveau1']">Explore</button>
+
+    </div>
+</div>

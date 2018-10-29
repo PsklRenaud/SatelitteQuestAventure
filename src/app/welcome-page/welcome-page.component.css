@@ -1,0 +1,128 @@
+#welcomePage-background {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;  
+}
+
+.welcomePage-background-new {
+    background-color: #a5c4e1;
+    transition: 1s;
+}
+
+.welcomePage-background-login {
+    background-color: #1D1D2D;
+    transition: 1s;
+}
+
+@media screen and (min-width:720px){
+    #welcomePage-background {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:720px){
+    #welcomePage-background {
+        flex-direction: column;
+    }
+}
+
+
+
+/* ------ Content ------ */
+
+.welcomePage-content-container {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width:720px) {
+    .welcomePage-content-container {
+        width: 40%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width:720px){
+    .welcomePage-content-container {
+        padding-top:5em;
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+.welcomePage-paragraph-form-container {
+    width: 100%;
+}
+
+/* text  */
+
+.welcomePage-title {
+    color:#FFD45C;
+}
+
+.welcomePage-text {
+    color: #fff;
+}
+
+/* form  */
+
+.welcomePage-form {
+    width: 100%;
+    margin-top:3em;
+}
+
+/* ------ Image ------ */
+
+#welcomePage-image-container {
+    
+    background-repeat: no-repeat;
+}
+
+.welcomePage-image-container1 {
+    height: 40em;
+    width: 20em;
+    align-self: flex-end;
+    background-position: bottom;
+    background-image: url(./WelcomePageBackgrounds/Accueil_Background1.png);
+}
+
+.welcomePage-image-container1-1 {background-image: url(./WelcomePageBackgrounds/Accueil_Background1.png);}
+.welcomePage-image-container1-2 {background-image: url(./WelcomePageBackgrounds/Accueil_Background2.png);}
+.welcomePage-image-container1-3 { background-image: url(./WelcomePageBackgrounds/Accueil_Background3.png);}
+.welcomePage-image-container1-4 {background-image: url(./WelcomePageBackgrounds/Accueil_Background4.png);}
+.welcomePage-image-container1-5 { background-image: url(./WelcomePageBackgrounds/Accueil_Background5.png);}
+
+.welcomePage-image-container2 {
+    height: 20em;
+    width: 20em;
+    background-image: url(./WelcomePageBackgrounds/Logo.png);
+    background-position: center;
+}
+
+
+
+@media screen and (min-width:959px){
+    #welcomePage-image-container {
+        margin-right: 15%;
+        background-size: 18em;
+    }
+}
+
+@media screen and (min-width:720px) and (max-width:959px){
+    #welcomePage-image-container {
+        margin-right: 10%;
+        background-size: 16em;
+    }
+}
+
+@media screen and (max-width:720px){
+    #welcomePage-image-container { 
+        margin: 0 auto;
+        background-size: 18em;
+    }
+    .welcomePage-image-container2 {
+        margin-bottom: 10em;
+    }
+}

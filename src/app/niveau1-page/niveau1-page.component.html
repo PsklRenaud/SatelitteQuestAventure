@@ -1,0 +1,38 @@
+<div class="niveau1-fond pb-5">
+    <div class="container niveau1-fond d-flex align-items-center">
+            <div class="row">
+                <div class="">
+                    <div class="col-12 col-md-12 col-lg-12 d-flex justify-content-center pt-3 mb-4 titlecolor font-subtitle">LET'S GO TO THE MOON
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 offset-lg-3 d-flex justify-content-center mb-2 textcolor">
+                        <p>Our satellite (code name: "Cassini") must be launched in orbit around the moon. The launch of the spacecraft which transport 
+                            the satellite is imminent. A spacecraft is a vehicle or machine designed to fly in outer space. Spacecraft are used for a variety of purposes, including communications, earth observation, meteorology, navigation, space colonization, planetary exploration, and transportation of humans and cargo. All spacecraft except single-stage-to-orbit vehicles cannot get into space on their own, and require a launch vehicle (carrier rocket). For your first mission you have to answer to this question :</p>  
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 d-flex justify-content-center mb-3 titlecolor font-subtitle">WHO IS THE FIRST MAN WHO WALKED ON THE MOON?
+                    </div> 
+                    <div id="boutons-reponses" class="col-12 col-md-12 col-lg-12"> 
+                        <div class="col-12 col-md-12 col-lg-6 offset-lg-3 d-flex justify-content-center mb-3">
+                            <button type="button" class="btn bgcolor d-flex justify-content-center btn-block font-weight-bold fontbuttonsize font-subtitle" [routerLink]="['/loser']">LOUIS AMSTRONG</button>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 offset-lg-3 d-flex justify-content-center mb-3">
+                                <button type="button" id="bonne-reponse" class="btn bgcolor d-flex justify-content-center btn-block font-weight-bold fontbuttonsize font-subtitle">NEIL AMSTRONG</button>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 offset-lg-3 d-flex justify-content-center pb-0">
+                                <button type="button" class="btn bgcolor d-flex justify-content-center btn-block font-weight-bold fontbuttonsize font-subtitle" [routerLink]="['/loser']">LANCE AMSTRONG</button>
+                        </div> 
+                    </div>
+                    <div id="AfficherReponse" class="col-12 col-md-12 hidden">
+                        <div class="col-12 col-md-12 col-lg-12 d-flex justify-content-center mb-4 titlecolor pt-4 font-subtitle">Well done!
+                        </div> 
+                            <div id="boutongetyourreward"  class="col-12 col-md-12 col-lg-6 offset-lg-3 d-flex justify-content-center mb-4">
+                                <a class="encrelune" href="#recompense-lune">
+                                <button type="button" class="btn bgcolor d-flex justify-content-center btn-block font-weight-bold fontbuttonsize font-subtitle">Get your reward</button>
+                            </a>
+                            </div>
+                    </div> 
+                </div>  
+            </div>
+    </div>
+</div>
+<app-recompense-moon id="recompense-lune" class="hidden"></app-recompense-moon>
+

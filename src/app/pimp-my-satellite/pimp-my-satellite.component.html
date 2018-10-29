@@ -1,0 +1,103 @@
+<div id="pimp-background">
+  <!-- Satellite -->
+  <div id="pimp-satellite-window">
+    <div id="pimp-satellite-window-container">
+      <div id="pimp-satellite-container">
+        <div id="pimp-satellite-solar-left" class="pimp-satellite-solar-left-long"></div>
+        <div id="pimp-satellite-body" class="pimp-satellite-body-square"></div>
+        <div id="pimp-satellite-antenna" class="pimp-satellite-antenna-light"></div>
+        <div id="pimp-satellite-solar-right" class="pimp-satellite-solar-right-long"></div>
+      </div>
+    </div>
+    <div id="pimp-satellite-coordonate">
+        <h2 id="pimp-satellite-name" class="font-subtitle">{{coordonate.satelliteName}}</h2>
+        <p>Level: {{coordonate.email}}</p>
+        <p>Location : {{coordonate.location}}</p>
+      </div>
+  </div>
+  <!-- Palette -->
+  <div id="pimp-customise-window">
+    <!-- Switch buttons -->
+    <div id="pimp-forms-button">
+      <button (click)="switchWindowSatellite()" id="pimp-forms-button-satellite" class="pimp-forms-button">Satellite</button>
+      <button (click)="switchWindowCustom()" id="pimp-forms-button-custom" class="pimp-forms-button pimp-forms-button-unselect">Stickers</button>
+    </div>
+    <!-- first window "satellite" -->
+    <div id="pimp-forms-satellite" class="pimp-forms">
+      <div id="pimp-forms-satellite-container" class="pimp-forms-container">
+        <!-- Satellite body -->
+        <div id="pimp-forms-satellite-center" class="pimp-forms-satellite-categories">
+            <h3 class="font-subtitle" (click)="showCenter()">Body</h3>
+            <div id="pimp-satellite-center-to-hide" class="hidden">
+              <div id="pimp-satellite-center-container">
+                <div id="pimp-satellite-center-square" class="pimp-satellite-center">
+                  <p> Square</p>
+                  <div id="pimp-satellite-center-square-img" (click)="showBodySquare()" class="pimp-satellite-center-img pimp-satellite-img pimp-satellite-center-square-img-select"></div>
+                </div>
+                <div id="pimp-satellite-center-round" class="pimp-satellite-center">
+                    <p> Round</p>
+                    <div id="pimp-satellite-center-round-img" (click)="showBodyRound()" class="pimp-satellite-center-img pimp-satellite-img pimp-satellite-center-round-img-unselect"></div>
+                </div>
+                <div id="pimp-satellite-center-octo" class="pimp-satellite-center pimp-satellite-img">
+                    <p> Octogone</p>
+                    <div id="pimp-satellite-center-octo-img"  (click)="showBodyOcto()"class="pimp-satellite-center-img pimp-satellite-img pimp-satellite-center-octo-img-unselect"></div>
+                </div>
+              </div>
+            </div>
+        </div>
+          <!-- Panneaux solaire -->
+        <div id="pimp-forms-satellite-solar" class="pimp-forms-satellite-categories">
+              <h3 class="font-subtitle" (click)="showSolarPanels()">Solar pannels</h3>
+              <div id="pimp-satellite-solar-to-hide" class="hidden">
+                <div id="pimp-satellite-solar-container">
+                  <div id="pimp-satellite-solar-long" class="pimp-satellite-solar">
+                    <p>Long</p>
+                    <div id="pimp-satellite-solar-long-img" (click)="showSolarPanelsLong()" class="pimp-satellite-solar-img pimp-satellite-img pimp-satellite-solar-long-img-select"></div>
+                  </div>
+                  <div id="pimp-satellite-solar-wave" class="pimp-satellite-solar">
+                      <p> Wave</p>
+                      <div id="pimp-satellite-solar-wave-img" (click)="showSolarPanelsWave()" class="pimp-satellite-solar-img pimp-satellite-img pimp-satellite-solar-wave-img-unselect"></div>
+                  </div>
+                  <div id="pimp-satellite-solar-circle" class="pimp-satellite-solar">
+                      <p>Circular</p>
+                      <div id="pimp-satellite-solar-circle-img" (click)="showSolarPanelsCircle()" class="pimp-satellite-solar-img pimp-satellite-img pimp-satellite-solar-circle-img-unselect"></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+          <!-- antenna -->
+        <div id="pimp-forms-satellite-antenna" class="pimp-forms-satellite-categories">
+              <h3 class="font-subtitle" (click)="showAntenna()">Antenna</h3>
+              <div id="pimp-satellite-antenna-to-hide" class="hidden">
+                <div id="pimp-satellite-antenna-container">
+                  <div id="pimp-satellite-antenna-square" class="pimp-satellite-antenna">
+                    <p>Light</p>
+                    <div id="pimp-satellite-antenna-light-img" (click)="showAntennaLight()" class="pimp-satellite-antenna-img pimp-satellite-img pimp-satellite-antenna-light-img-select"></div>
+                  </div>
+                  <div id="pimp-satellite-antenna-round" class="pimp-satellite-antenna">
+                      <p>Heavy</p>
+                      <div id="pimp-satellite-antenna-heavy-img" (click)="showAntennaHeavy()" class="pimp-satellite-antenna-img pimp-satellite-img pimp-satellite-antenna-heavy-img-unselect"></div>
+                  </div>
+                  <div id="pimp-satellite-antenna-octo" class="pimp-satellite-antenna">
+                      <p>Multiple</p>
+                      <div id="pimp-satellite-antenna-multiple-img" (click)="showAntennaMultiple()" class="pimp-satellite-antenna-img pimp-satellite-img pimp-satellite-antenna-multiple-img-unselect"></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>           
+    </div> 
+    <!-- second window "custom" -->
+    <div id="pimp-forms-custom" class="pimp-forms">
+        <div id="pimp-forms-custom-container" class="pimp-forms-container">
+          <div id="pimp-stickers-flamme" class="pimp-forms-custom-sticker pimp-stickers-flamme"></div>
+          <div id="pimp-stickers-nasa" class="pimp-forms-custom-sticker pimp-stickers-nasa"></div>
+          <div id="pimp-stickers-ol" class="pimp-forms-custom-sticker pimp-stickers-ol"></div>
+          <div id="pimp-stickers-unkut" class="pimp-forms-custom-sticker pimp-stickers-unkut"></div>
+          <div id="pimp-stickers-cr7" class="pimp-forms-custom-sticker pimp-stickers-cr7"></div>
+          <div id="pimp-stickers-wild" class="pimp-forms-custom-sticker pimp-stickers-wild"></div>
+          <div id="pimp-stickers-perche" class="pimp-forms-custom-sticker pimp-stickers-perche"></div>
+        </div>
+    </div> 
+  </div> 
+</div>
